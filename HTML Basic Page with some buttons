@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>End me please</title>
+
+<head>
+
+<script>
+ /*
+These are all of the functions
+required for the assignment
+*/
+function changeH1Red() {
+   document.getElementById("h1").style.color = "red"; // Changes H1 to red
+   document.getElementById("h1").style.fontSize = "75px"; // Changes H1 font size
+   }
+</script>
+
+<script>
+function changeH1Blue() {
+   document.getElementById("h1").style.color = "blue"; // Changes H1 to blue
+   document.getElementById("h1").style.fontSize = "75px"; // Changes H1 font size
+   }
+</script>
+
+<script>
+function changeH2Red() {
+   document.getElementById("h2").style.color = "red"; // Changes H2 to red
+   document.getElementById("h2").style.fontSize = "75px"; // Changes H2 font size
+   }
+</script>
+
+<script>
+function changeH2Blue() {
+   document.getElementById("h2").style.color = "blue"; // Changes H2 to blue
+   document.getElementById("h2").style.fontSize = "75px"; // Changes H2 font size
+   }
+</script>
+</head>
+
+
+
+<body>
+
+<!-- Hey it's Braden, 
+the course is Foundations 
+and the assignment is horrible. -->
+
+<h1 id="h1">This is terrible</h1>
+<br><br>
+<h2 id="h2">Please don't do this Matt</h2>
+<br><br><br>
+<button onclick="changeH1Red()">Make H1 Red</button>
+<br>
+<button onclick="changeH1Blue()">Make H1 Blue</button>
+<br>
+<button onclick="changeH2Red()">Make H2 Red</button>
+<br>
+<button onclick="changeH2Blue()">Make H2 Blue</button>
+
+</body>
+
+</html>
