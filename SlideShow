@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<title>Square-body Images</title>
+
+<head>
+
+<script>
+	var intervalId;
+	
+	function startSlideShow()
+	{
+		intervalId = setInterval(changeImage, 2000);
+	}
+	
+	function stopSlideShow()
+	{
+		clearInterval(intervalId);
+	}
+	function changeImage() 
+		{
+		var imageSrc = document.getElementById("image").getAttribute("src");
+		var currentImageNumber = imageSrc.substring(imageSrc.lastIndexOf("\") + 1, imageSrc.lastIndexOf("\") + 2);
+		var newImage = "C:\Users\Braden\Desktop\Square Images\" + (Number(currentImageNumber) + 1) + ".jpg");
+		
+		document.getElementById("result").innerHTML = newImage;
+		document.getElementById("image").setAttribute("src", newImage);
+		}
+		
+		
+</script>
+
+
+
+</head>
+
+<body>
+
+<!-- Braden, 1402, Mazda5 -->
+
+<h1>Choose Your View of the Square-body</h1>
+<br><br><br>
+<img src="C:\Users\Braden\Desktop\Square Images\1.jpg" id="image" style="height:600px; width:800px">
+<br><br><br>
+<button type="button" onclick="startSlideShow()">Start Cycle</button>
+<button type="button" onclick="stopSlideShow()">Stop Cycle</button>
+<div id="result"></div>
+</body>
+
+</html>
