@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Calculator thing</title>
+
+<head>
+
+<script>
+	var fNumber=prompt("First Number", "Enter Here");
+	var sNumber=prompt("Second Number", "Enter Here");
+	var sum=fNumber+sNumber;
+	var diff=fNumber-sNumber;
+	var mult=fNumber*sNumber;
+	var divi=fNumber/sNumber;
+	document.write("The sum of "fNumber" and "sNumber" is " + sum);
+	document.write("The difference of "fNumber" and "sNumber" is " + diff);
+	document.write("The product of "fNumber" and "sNumber" is " + mult);
+	document.write("The quotient of "fNumber" and "sNumber" is " + divi);
+</script>
+	
+</head>
+
+<!-- Braden, 1402, Java Variables -->
+
+<body>
+
+<h1>A Very Simple Calculator</h1>
+
+</body>
+
+</html>
