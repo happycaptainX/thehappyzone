@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<title>ChangeMe</title>
+
+<head>
+
+<script>
+	
+	function changeImage1() // Changes to image 1
+	
+	{
+	
+	element=document.getElementById("image")
+	
+	if (element.src.match("1.jpg"))
+	
+	  {
+	  alert("You're already viewing ChangeMe!"); // Gives an alert that you're already viewing the image selected
+	  }
+	
+	else // Changes to image 1. Please make sure that your .jpg is named "1.jpg"
+	
+	  {
+	  element.src="1.jpg";
+	  }
+	}
+	
+	function changeImage2() // Changes to image 2
+	
+	{
+	
+	element=document.getElementById("image")
+	
+	if (element.src.match("2.jpg"))
+	
+	  {
+	  alert("You're already viewing ChangeMe!"); // Gives an alert that you're already viewing the image selected
+	  }
+	
+	else // Changes to image 2. Please make sure that your .jpg is named "2.jpg"
+	
+	  {
+	  element.src="2.jpg";
+	  }
+	}
+		
+	function changeImage3() // Changes to image 3
+	
+	{
+	
+	element=document.getElementById("image")
+	
+	if (element.src.match("3.jpg"))
+	
+	  {
+	  alert("You're already viewing ChangeMe!"); // Gives an alert that you're already viewing the image selected
+	  }
+	
+	else // Changes to image 3. Please make sure that your .jpg is named "3.jpg"
+	
+	  {
+	  element.src="3.jpg";
+	  }
+	}
+</script>
+
+
+
+</head>
+
+<body>
+
+<!-- ChangeMe -->
+
+<h1>ChangeMe</h1>
+<br><br><br>
+<img src="1.jpg" id="image" style="height:1200px; width:1600px">
+<br><br><br>
+<button type="button" onclick="changeImage1()">ChangeMe</button>
+<button type="button" onclick="changeImage2()">ChangeMe</button>
+<button type="button" onclick="changeImage3()">ChangeMe</button>
+</body>
+
+</html>
