@@ -7,16 +7,23 @@
 <head>
 
 <script>
+	
 	var fNumber=prompt("First Number", "Enter Here");
 	var sNumber=prompt("Second Number", "Enter Here");
-	var sum=fNumber+sNumber;
-	var diff=fNumber-sNumber;
-	var mult=fNumber*sNumber;
-	var divi=fNumber/sNumber;
-	document.write("The sum of "fNumber" and "sNumber" is " + sum);
-	document.write("The difference of "fNumber" and "sNumber" is " + diff);
-	document.write("The product of "fNumber" and "sNumber" is " + mult);
-	document.write("The quotient of "fNumber" and "sNumber" is " + divi);
+	
+	var fNumber=parseInt(fNumber);
+	var sNumber=parseInt(sNumber);
+	
+	var sum=fNumber + sNumber;
+	var diff=fNumber - sNumber;
+	var mult=fNumber * sNumber;
+	var divi=fNumber / sNumber;
+	
+	document.write("The sum of "fNumber" and "sNumber" is " + sum + " .<br>);
+	document.write("The difference of "fNumber" and "sNumber" is " + diff + " .<br>);
+	document.write("The product of "fNumber" and "sNumber" is " + mult + " .<br>);
+	document.write("The quotient of "fNumber" and "sNumber" is " + divi + " .<br>);
+
 </script>
 	
 </head>
@@ -30,3 +37,4 @@
 </body>
 
 </html>
+ <!-- Edit I fixed the index parsing, and added some line breaks. -->
